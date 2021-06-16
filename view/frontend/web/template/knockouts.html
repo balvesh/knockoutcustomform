@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="col-md-8">
+        <form name="customForm" method="post" id="addData" class="form"
+              data-hasrequired="* Required Fields"
+              data-mage-init='{"validation": {}}'  data-bind="submit: save" >
+            <fieldset class="fieldset">
+                <legend class="legend"><span>Custom Form</span></legend>
+                <fieldset class="fieldset row">
+                    <legend>Fill Details</legend>
+                    <div class="fields col-md-6">
+                        <div class="field name required">
+                            <label class="label" for="title"><span>Name</span></label>
+                            <div class="control">
+                                <input name="name" id="name" title="Name" value="" class="input-text" type="text"
+                                       data-validate="{required:true, 'validate-alphanum-with-spaces':true}">
+                            </div>
+                        </div>
+                        <div class="field email required">
+                            <label class="label" for="title"><span>Email</span></label>
+                            <div class="control">
+                                <input name="email" id="email" title="Email" value="" class="input-text" type="text"
+                                       data-validate="{required:true, 'validate-email':true}">
+                            </div>
+                        </div>
+                        <div class="field phone required">
+                            <label class="label" for="title"><span>Phone</span></label>
+                            <div class="control">
+                                <input name="phone" id="phone" title="Phone" value="" class="input-text" type="text"
+                                       data-validate="{required:true, 'validate-number':true}">
+                            </div>
+                        </div>
+                        <div class="field message required">
+                            <label class="label" for="title"><span>Message</span></label>
+                            <div class="control">
+                                <input name="message" id="message" title="Message" value="" class="input-textarea" type="text"
+                                       data-validate="{required:true}">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </fieldset>
+            <div class="actions-toolbar">
+                <div class="primary">
+                    <button type="submit" class="action submit primary" title="Save"><span>Save</span></button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
